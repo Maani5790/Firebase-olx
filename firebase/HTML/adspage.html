@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="stylesheet" href="../CSS/details.css">
+<link rel="stylesheet" href="../CSS/style.css" >
+
+    <title> Details Page </title>
+  </head>
+  <body>
+
+    <!-- --------- Top Logo Section ----------------- -->
+    <div class="container-fluid" id="top_div">
+      <!-- <i id="arrow" class="bi bi-arrow-left"></i>-->
+
+      <img src="../images/back arrow.png" id="arrow" alt="">
+        <img src="../images/olx logo.png" id="logo">
+    </div>
+
+    <!------------ Header Section ------------------>
+
+    <div class="container">
+      <p id="header"> Post Your AD</p>
+    </div>
+
+    <form class="container  formCss" id="form_action">
+
+      <div class="row mb-4 top-sec">
+        <h4 id="head_form"> Select Category Section</h4>
+        <p id="sel-cat"> Mobiles Tablets</p>
+      </div>
+      <!-- 2 column grid layout with text inputs for the first and last names -->
+      <div class="row mb-4">
+        <h4 id="head_form"> Include Some Details</h4>
+        <div class="col-12">
+          <div class="form-outline">
+            <label class="form-label name  is-valid" for="form6Example1">Ad title</label> 
+           <input type="text" id="form6Example1" class="form-control" />
+           <label class="form-label name" for="form6Example1">
+            Mention the key features of your item (e.g. brand, model, age, type)
+          </label> 
+           
+          </div> 
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+
+        <!-- Message input -->
+    
+        
+      </div>
+    
+      <!-- Text input -->
+
+      <label class="form-label name" for="form6Example3">Brand</label>
+
+      <select id="select_brand" class="browser-default custom-select" aria-placeholder="bhhws">
+        <option selected>Brand Selection</option>
+        <option value="1">Hs Sports</option>
+        <option value="2">Gray Nichols</option>
+        <option value="3">Lenovo</option>
+        <option value="4">Samsung</option>
+        <option value="5">Techno</option>
+        <option value="6">Vivo Series</option>
+        <option value="7">Lenovo</option>
+        <option value="8">Infinix</option>
+        <option value="9">Lenovo</option>
+      </select>
+
+      <div class="form-outline mb-4">
+        <label class="form-label name" for="form6Example7">Description</label>
+        <textarea class="form-control" id="form6Example7" rows="4" placeholder="Enter your product description"></textarea>
+        
+      </div>
+      <div class="form-outline mb-4">
+        <select class="selectpicker" id="conditionGet" class="btn-primary">
+          <option selected>Condiion Of Product</option>
+          <option>Bad</option>
+          <option>Good</option>
+          <option>Excellent</option>
+        </select>
+        
+        
+      </div>
+      
+    
+      <!-- Text input -->
+      <div class="form-outline mb-4">
+        <h4> Your Ads Location</h4>
+        <label class="form-label" for="form6Example4">Location</label>
+        <select class="browser-default custom-select" id="Ads_Location" aria-placeholder="bhhws">
+          <option selected>Karachi, Pakistan</option>
+          <option value="1">Azad Kashmir, Pakistan</option>
+          <option value="2">Northern Areas, Pakistan</option>
+          <option value="3">Islamabad Capital Territory, Pakistan</option>
+          <option value="4">Khyber Pakhtunkhwa, Pakistan</option>
+          <option value="5">Northern Areas, Pakistan</option>
+       
+        </select>
+        
+      </div>
+    
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form6Example5">Price</label>
+        <input type="text" id="form6Example5" class="form-control" />
+        
+      </div>
+
+      <div class="container text-center mb-4 mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h4><a href="https://plugins.krajee.com/file-input" target="_blank"><b>Upload Items</b></a></h4>
+            </div>
+        </div>
+    </div>
+    
+    <section class="bg-diffrent">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="file-upload-contain">
+                        <input type="file" id="file" />
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+    
+    
+      <!-- Submit button -->
+     <button type="submit" class="btn btn-primary btn-block mb-4" onclick="getData(event)">Post Now</button> 
+    </form>
+
+
+
+
+    </body>
+
+    <script src="../JS/LocalStorage.js"></script>
+    <script src="../JS/getImage.js"></script>
+    </html>

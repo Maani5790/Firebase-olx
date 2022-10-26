@@ -1,0 +1,12 @@
+
+
+
+img {
+    width: 100px;
+    height: 230px;
+}
+
+#carouselExampleIndicators{
+    /* margin-top: 120px; */
+    border: 2px dotted firebrick;
+}
